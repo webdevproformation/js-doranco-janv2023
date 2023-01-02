@@ -21,6 +21,8 @@ password : initiation
 github => toutes les notes de cours sont partagées directement sur github
 => je vous donnerai le lien du github 
 
+https://github.com/webdevproformation/js-doranco-janv2023
+
 Visual Studio 
 personnalisé l'outil => plugin (extension)
 1 live server
