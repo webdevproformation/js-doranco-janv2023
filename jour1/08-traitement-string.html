@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 08-traitement-string.html
+        const prenom = "Victor" ;
+        const nom = "Hugo" ; 
+        // à partir de ces deux variables obtenir le texte "Victor Hugo" 
+        // deux variables qui contiennent des string et que l'on veut les additionner 
+        // il faut dire plutôt CONCATENER deux string 
+        const auteurFrancais = prenom + " " + nom ; 
+        const auteurFrancais2=prenom+" "+nom
+
+        const auteurFrancais3 = `${prenom} ${nom}` ; // template string
+        // la nouvelle manière de réaliser de la concaténation
+        // disponible depuis la version 2015 de javascript 
+        // interpolation 
+
+        const auteurFrancais4 = '${prenom} ${nom}'
+
+        // 10 20 
+
+       /*  const tableau = ["bonjour" , "les amis"]
+        const phrase = tableau[0] + " " + tableau[1] */
+
+        const montant = 40 ;
+        const devise = "euros"
+
+        const prixAAfficher = montant + " " + devise ; // "30 euros"
+        const prixAAfficher2 = `${montant} ${devise}` ; 
+
+        console.log( prixAAfficher ) ; // fonction qui est à destination des développeurs 
+                                       // fonction qui permet de débugger => voir le contenu de la variable 
+        // http://127.0.0.1:5500/jour1/08-traitement-string.html
+
+        const montantTotal ="40 euros" ; 
+        const montantTotal2 = montant + " " + devise ; 
+
+    </script>
+</body>
+</html>
+<!-- cas pratique 
+créer le fichier 09-exo.html qui contient une structure de page et une balise script
+
+créer 4 variables 
+sexe qui vaut :  M
+prenom qui vaut : Alain
+nom qui vaut : DOE
+adresse qui vaut : 45 rue de Paris
+
+à partir de ces 4 variables écrire dans la console du navigateur les 3 phrases suivantes
+
+Alain habite au 45 rue de Paris
+Monsieur DOE apprend l'informatique
+A coté du 45 rue de Paris, il y a la place John DOE 
+
+-->

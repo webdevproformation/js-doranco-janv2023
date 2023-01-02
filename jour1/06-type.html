@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 06-type.html
+        // type des variables => la nature des valeurs qui vont être stockées dans les variables 
+        // il est 5 types de base en javascript 
+        // type simple
+        // chaine de caractèr / texte / string 
+        const a = "bonjour" ; // a une variable de type string 
+        const b = 'hello'  ; // utilisation de l'apostrope pour la valeur 
+        const c = `hola`   ; // backtick AltGr + 7 deux fois 
+
+        // chiffre / number 
+        const d = 12 ; 
+        const prix = 15.5 ; // utiliser le le symbole . comme séparateur 
+        const reduction = -0.2 ; // - fait parti du chiffre 
+                                 // vous pouvez mettre une espace entre - et le chiffre 
+        const salaire = 1000000000 ;  
+        const salaire2 = 1_000_000_000 ;  // vous pouvez rendre le chiffre
+                                   // plus lisible via le symbole underscore tiret bas 
+
+        const prixBaguette = "1.1 euros" ;
+        const unPrix = "15 5" ;
+
+        const grosChiffreAvecEspace = "4657817687684416873871384328 43968917837138432841387138713871837138731873871387138713871"
+
+        const reduc = "-20%" ;
+
+        const note = "12 / 20" ;
+
+        // valeur logique ou boolean 
+
+        const e = true ; // true est un mot clé du langage js 
+                         // comme let const var ; = 
+                         // attention ne pas confondre true et "true"
+        const f = false ; // false est un mot clé du langage js 
+
+        let g = false ;
+        var h = true ; 
+
+        // variable type simple => 1 variable stocker 1 valeur 
+
+        // type complexe
+        // 1 variable stocker PLUSIEURS VALEURS et des type différents 
+
+        // tableau => array 
+        const etudiants = [] ;
+        // crochet AltGr + 5 en haut 
+        // 12 15 et 20 
+        const notes = [ 12 , 15 , 20 ] ;
+        const notes2=[12,15,20] ;
+        const notes3 = [ 12 , 15 , 20 , ] ;
+
+        const arbres = [ "chêne" , "roseau" , "poirier" , "pommier" ] ;
+
+        const tests = [ true , false , true , true ] ; 
+        // tableau qui contient 4 valeurs de type boolean 
+        const admin = [ "Alain" , "alain@yahoo.fr" , 12 , false  ]  ;
+        // tableau qui contient 4 valeurs de type différents
+
+        const grosTableau = [ "lorem ipsum" , "consectetur adipiscing elit." , "Pellentesque id feugiat lectus," , "eu tincidunt ex." , "In convallis hendrerit dictum."  , "Curabitur risus justo, " , "mattis vitae nisi a, "];
+
+        const grosTableau2 = [ 
+            "lorem ipsum" , 
+            "consectetur adipiscing elit." , 
+            "Pellentesque id feugiat lectus," , 
+            "eu tincidunt ex." , 
+            "In convallis hendrerit dictum."  , 
+            "Curabitur risus justo, " , 
+            "mattis vitae nisi a, "
+        ];
+        // trailing (finale) coma (symbole virgule)
+
+
+        // objet => object 
+
+        const voiture = {} ; // objet vide
+        // accolades AltGr + 4
+
+        const produit = {
+            nom : "Play Station 5",
+            prix : 800 ,
+            devise : "euro" ,
+            disponible : false 
+        } ;
+
+
+    </script>
+</body>
+</html>
+
+<!--
+    créer le fichier 07-exo.html
+    créer une structure de page html et mettre une balise script 
+    dans cette balise créer les variables suivantes 
+    créer la variable a qui contient le texte coucou
+    créer la variable b qui contient le chiffre -30%
+    créer la variable c qui contient le chiffre 50 millions
+    créer la variable d qui contient boolean faux
+
+    créer la variable e qui contient un tableau avec 5 valeurs 
+        "Alain" Céline Benoit Charles Denis
+    créer la variable f qui contient un objet avec 3 propriétés 
+        nom qui aura comme valeur Alain
+        age qui aura comme valeur 30
+        status qui aura comme valeur vrai 
+
+-->

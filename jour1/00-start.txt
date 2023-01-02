@@ -1,0 +1,45 @@
+Bonjour Bonne Année 
+
+Malik HARRIZ - malik.h@webdevpro.net 
+
+------------------------
+
+Javascript 3 jours (langage pur et dur) => mercredi QCM 16h50
+Javascript DOM 2 jours = vendredi QCM 16h50
+jQuery (2 jours) => mardi QCM 16h50
+
+------------------------
+
+support de cours pour chaque matière :
+
+url : https://formation.webdevpro.net/js-initiation/ (dans la barre d'adresse)
+login : js 
+password : initiation
+
+------------------------
+
+github => toutes les notes de cours sont partagées directement sur github
+=> je vous donnerai le lien du github 
+
+Visual Studio 
+personnalisé l'outil => plugin (extension)
+1 live server
+2 zoom bar
+
+3 Roue dentée > Thème de Couleur > thème clair
+
+4 retour à la ligne automatique si le texte est plus large de l'écran 
+(et non une barre de défilement)
+Roue dentée > Paramètres > chercher le mot "wrap" >  Word Wrap "on" 
+
+bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour bonjour 
+
+Javascript/
+    jour1
+        00-....
+    jour2 
+        00-
+        01- 
+        ....
+
+dans le dossier jour1 > créer un nouveau fichier 01-presentation.html
