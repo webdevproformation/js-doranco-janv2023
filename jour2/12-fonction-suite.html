@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 12-fonction-suite.html
+        function addition(){
+            const valeur1 = 100;
+            const valeur2 = 250 ;
+            const resultat = valeur1 + valeur2
+            console.log(resultat);
+        }
+
+        function addition2(){
+            const valeur1 = 10;
+            const valeur2 = 20 ;
+            const resultat = valeur1 + valeur2
+            console.log(resultat);
+        }
+        addition2()
+
+        function addition3(){
+            const valeur1 = 35;
+            const valeur2 = 12 ;
+            const resultat = valeur1 + valeur2
+            console.log(resultat);
+        }
+        addition3()
+
+        function add(valeur1, valeur2){ 
+            // déplacer les 2 variables valeur1, valeur2
+            // initialement dans la fonction
+            // met comme PARAMETRES de la fonction
+            const resultat = valeur1 + valeur2
+            console.log(resultat);
+        }
+
+        add(35 , 12) ;
+        add(100 , 250) ;
+        add(10 , 20) ; // les paramètres sont initialisés 
+                       // on leur donne une valeur au moment de l'appel de la fonction 
+    </script>
+</body>
+</html>
+<!-- 
+    créer le fichier 13-exo.html
+    créer une fonction qui s'appelle cercle 
+    cette fonction dispose d'une paramètre la variable r 
+    cette fonction contient 2 instructions 
+        calcul de l'aire d'un cercle : aire = 3,14 x r puissance 2
+        afficher dans la console la phrase suivante 
+        "un cercle de rayon r a pour aire aire"
+
+    exécuter la fonction cercle pour le paramètre r ayant pour valeur 12
+    exécuter la fonction cercle pour le paramètre r ayant pour valeur 5,3
+    exécuter la fonction cercle pour le paramètre r ayant pour valeur 100
+-->
