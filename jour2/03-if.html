@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 03-if.html 
+        // STRUCTURE mot clé du langage qui vont permettre de modifier l'ordre dans lequel le code va être exécuté 
+
+        const a = 10 ;
+        const b = 30 ;
+        const c = a + b ;
+        console.log(c) ; 
+
+        // les STRUCTURES 
+        // if / for / function => permettent de changer l'ordre dans lequel le code est exécuté 
+
+        // if(){}
+
+        const toto = 20 > 30  ; 
+        // false 
+
+        if(toto){
+            // false => javascript ne va pas exécuter le code écrit dans les accolades
+            console.log("la condition est vraie") ; 
+        }
+
+        if(50 > 30 && 60 <= 80){
+        //   true  &&  true
+        //       true 
+            console.log("la condition2 est vraie") ; 
+        }
+
+        if("azerty" == "azerty" && 123456 == "123456"){
+        //    true              && "123456" == "123456"
+        //    true              && true
+        //             true 
+            console.log("bienvenu sur votre boite mail");
+        }
+
+        // si la personne a entre 0 et 18 ans => vous êtes mineur
+        // si la personne a entre 19ans et 60 ans => vous êtes majeur
+        // si la personne a entre 60ans et 120 ans => vous êtes retraité
+        // sinon (age négatif / age > 120 ...) age mentionné n'est pas valide 
+
+        const age = -20 ;
+
+        if(age > 0 && age <= 18){ // si la personne a entre 0 et 18 ans
+        // -20 > 0  && -20 <= 18
+        // false    &&  true 
+        // false     
+            console.log("vous êtes mineur");
+        }else if(age >= 19 && age < 60 ){
+            // -20 >= 19 && -20 < 60
+            //   false &&   true
+            //      false 
+            console.log("vous êtes majeur");
+        }else if(age >= 60 && age < 120 ){
+            //    -20 >= 60 && -20 < 120
+            //     false    &&   true 
+            //      false 
+            console.log("vous êtes retraité");
+        } else { // le else est toujours la dernier cas 
+            // si toutes les conditions précédentes sont false 
+            // alors js exécute le else 
+            console.log("age mentionné n'est pas valide"); 
+        }
+
+        
+
+    </script>
+</body>
+</html>
