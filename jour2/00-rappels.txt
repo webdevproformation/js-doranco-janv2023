@@ -1,0 +1,41 @@
+Qu'est ce que l'on a vu ?
+
+Javascript
+
+créer des variables : 3 manières 
+const => variable définie une fois pour toute (sécurité)
+let => variable modifiable (sécurité)
+var => ancienne méthode avant 2015
+
+5 grands types de valeurs que l'on peut stocker dans des variables 
+
+simple 1 variable contient une valeur 
+-  string (chaine de caractère) "" '' ``
+-  number (chiffre) 12 12.1 -10 1_000
+-  boolean (valeur logique) false true 
+
+complexe 1 variable contient plusieurs valeurs 
+- array (tableau)  [] [ 1,2,3 ] [ "a","b","c" ] [[] ,[]] [{},{}]
+- object (objet)  {}  { prop : "a", prop2 : 2 , prop3 : [] }
+
+
+traitement sur les strings => concaténation 
+(additionner string + string)
+const a = "Bonjour";
+const b = "comment allez vous ?";
+
+const texte1 = a + " " + b ; // ancienne manière 
+const texte2 = `${a} ${b}` ; // template string 
+
+traitement sur les numbers => 
+addition + / soustraction - / multiplication * / division /
+puissance ** / modulo %
+
+variable sur laquelle on veut effectuer une augmentation ou une diminution 
+ET on veut effectuer l'augmentation ou la diminution en utilisant 1 seule variable 
+opérateur unaire   += ++ -= -- 
+let like = 0 ;
+    like = like + 2 ; // like += 2
+    like = like + 1 ; // like += 1 // like++ 
+    like = like - 5 ; // like -= 5  
+    like = like - 1 ; // like -= 1 // like--
