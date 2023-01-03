@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = true ;
+        const b = 12 > 5 ; // comparaison 
+        console.log(b);
+
+        const c = 40 < 10 ; 
+        console.log(c);
+
+        // opérateur de comparaison
+        // > strictement supérieur
+        // < strictement inférieur
+        // >= supérieur ou égal // attention => ne veut dire égal ou supérieur
+        // <= inférieur ou égal  // attention =< n'existe pas égal ou inférieur
+        // == égal 
+        // != différent 
+        // === strictement égal 
+        // !== strictement différent 
+
+        // = symbole d'affectation stocker la valeur de droite dans la variable gauche
+        // == symbole de comparaison
+        // === symbole de comparaison 
+
+        const d = 40 == 20 ; 
+        //          false 
+        console.log(d);
+
+        const e = 40 == 40 ;
+        //          true
+        console.log(e) // true
+
+        const f = 40 == "40" ;
+    // const f = "40" == "40" ; transtypage 
+        //          true
+        console.log(f);
+
+        const g = 40 === "40" ; // compare la valeur ET le type (comparaison stricte)
+        //         false
+        console.log(g); 
+
+        // opérateur boolean 
+        // && ET
+        // || OU
+        // !  NOT 
+
+        const h = 30 > 10 && 40 < 20 ;
+        //         true   &&   false
+        //              false 
+
+        // true && true = true // site internet de compte de banque 
+        // false && true = false
+        // true && false = false
+        // false && false = false
+
+        const i = 50 == 30 && 80 > 10 ;
+        // quelle est la valeur de i ?? 
+        //         false   &&  true
+        //              false 
+        console.log(i); 
+
+        // OU || 
+
+        const j = 50 == 30 || 80 > 10 ;
+        //          false  ||   true 
+        //               true 
+        console.log(j); 
+
+        // true || true = true 
+        // false || true = true 
+        // true || false = true 
+        // false || false = false 
+
+        // ! NOT 
+        const k = !(50 == 30 || 80 > 10) ;
+        //        !( false   || true   )
+        //        !(    true   )
+        //        false 
+        console.log(k) ;
+
+        // !true = false // est ce que la personne n'est pas connecté 
+        // !false = true // est ce que la personne n'est pas admin 
+
+    </script>
+</body>
+</html>
+<!--
+    créer le fichier 02-exo.html 
+    déterminer pour chaque opération suivante si le résultat est true ou false 
+    et expliquer pourquoi ?
+
+    2 >= 2
+    "a" == "ab"
+    2 != 3 && 10 < 33
+    "hello" > "bonjour" 
+    2 ==  "2"
+    2 === "2"
+    (2 != 5 && 3 > 4 ) || 2 <= 14 
+    2 != 5 && ( 3 > 4  || 2 <= 14 ) 
+    2 != 5 && 3 > 4  || 2 <= 14
+
+    if else elseif
+    for 
+    fonction 
+
+-->
