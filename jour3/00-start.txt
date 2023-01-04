@@ -1,0 +1,14 @@
+support de cours pour chaque matière :
+
+url : https://formation.webdevpro.net/js-initiation/ (dans la barre d'adresse)
+login : js 
+password : initiation
+
+------------------------
+
+github => toutes les notes de cours sont partagées directement sur github
+=> je vous donnerai le lien du github 
+
+https://github.com/webdevproformation/js-doranco-janv2023
+
+serveur discord : https://discord.gg/Vk5Q5zqC

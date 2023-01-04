@@ -1,0 +1,133 @@
+Qu'est ce que l'on a vu hier ???
+
+=> traitement sur les string => concaténation
+=> traitement sur les number => addition / soustraction ...
+
+=> traitement sur les boolean true / false 
+
+true et false sont le resultat d'une comparaison
+
+opérateurs de comparaison 
+> strictement supérieur
+< strictement inférieur
+>= supérieur ou égal
+<= inférieur ou égal
+!= différent
+== égal 
+=== strictement égal 
+!== strictement différent 
+
+const a = 123 > 456 ; // false 
+
+=> opération boolean avec opérateurs boolean
+
+&& Et => google mail saisir vos identifiants 
+|| Ou => 
+!  Not  => !true => false   /// !false => true 
+
+pour certaines valeurs, javascript va les transformer en false si il sont utilisés dans un STRUCTURE if 
+
+0 -0 "" null undefined NaN false => Falsy 
+
+if("bonjour"){
+
+}
+
+STRUCTURE => permet de changer l'ordre naturel d'execution d'un programme
+
+par défaut l'ordre naturel d'exécution d'un programme ligne par ligne 
+
+3 structures 
+if(){} condition ( switch case )
+for(){} boucle  ( while(){} - do() while() {})
+function a () {} stocker des instructions dans une variable 
+
+if(condition){
+    // .... 
+}
+
+if(2 > 1){ // si la condition est true => exécuter dans les accolades
+    // .... 
+}
+
+if(2 > 1 && 1 < 3 || 7 > 8 ){ // si false ignore le code dans les accolades
+    // .... 
+}
+
+if(condition1){
+
+}else if(condition2){
+
+}else if(condition3){
+
+}else {
+
+}
+
+----------------
+
+// répéter une ou plusieurs instructions plusieurs fois en écrivant 1 SEULE FOIS 
+// 3 instructions 
+// let i = 0 : variable incrémentation 
+// i < 10 => condition de sortie de la boucle 
+// i = i + 1 ; i += 1 ; i++ => augmentation de l'incrément 
+
+for(let i = 0 ; i < 10 ; i = i + 1 ){
+ // ....
+}
+
+----------------
+
+dans une variable on peut stocker une ou plusieurs valeurs 
+const a = "bonjour";
+const b = [1,2,3] ; 
+
+function c () { 
+    // créer la fonction / définir la fonction / déclarer la fonction
+    const total = 30 ;
+    const remise = -0.2 ;
+    console.log(total * remise ) ;
+}
+
+
+// il faut appeler la fonction pour exécuter les instructions qu'elle stocke 
+
+c() ; 
+
+--- 
+function d (total , remise){
+    console.log(total * remise ) ;
+}
+
+d( 200 , -0.3 ) // paramètre permet de rendre votre fonction plus flexible 
+d( 150 , -0.5 )
+
+--- 
+
+scope 
+
+function e (){
+    const montant = 30 ; // variable locale 
+                        // existe QUE dans les accolades 
+    return montant ; 
+}
+
+// console.log(montant) erreur 
+
+const valeur = e () ; 
+console.log(valeur) ; 
+// valeur === 30 
+
+console.log(e()); 
+
+// créer le fichier 01-exo.html qui un script 
+
+// afficher dans la console du navigateur les textes suivants 
+
+7 x 1 = 7
+7 x 4 = 28
+7 x 7 = 49 
+7 x 10 = 70 
+
+utiliser une boucle for pour réaliser cet exo 
+
