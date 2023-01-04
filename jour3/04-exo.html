@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const formation = [
+            "HTML" , // 0
+            2 ,     // 1
+            "CSS" ,  // 2
+            5 ,      // 3
+            "semaines" , // 4
+            "jours"    // 5
+        ] ;
+
+        // je suis une formation en HTML d'une durée de 5 jours
+        console.log(`je suis une formation en ${formation[0]} d'une durée de ${formation[3]} ${formation[5]}`)
+
+        // il m'a fallu 2 semaines pour comprendre en détail CSS
+        console.log(`il m'a fallu ${formation[1]} ${formation[4]} pour comprendre en détail ${formation[2]}`);
+
+        // 2 x 5 = 10
+        console.log(`${formation[1]} x ${formation[3]} = ${formation[1] * formation[3]}`) ; 
+
+        // HTML et CSS sont des langages clients
+        console.log(`${formation[0]} et ${formation[2]} sont des langages clients`);
+    </script>
+</body>
+</html>
