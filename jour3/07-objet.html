@@ -62,10 +62,20 @@
         //const adresse_professionnelle
         const a = ["a","b","c"] ;
         `${a[0]} ${a[1]} ${a[2]}` ;
-        
+        let texte = ""
         for(let i = 0 ; i < a.length ; i++){
-            `${a[i]} ` ;
+            texte += `${a[i]} ` ;
         }
+
+        let phraseFinale = "je vais y apprendre " ;
+        for(let i = 0 ; i < 3 ; i++){
+            if(i === 2){
+                phraseFinale +=  `et ${formation.matieres[i]}` ;
+            }else{
+                phraseFinale +=  `${formation.matieres[i]} `;
+            }
+        }
+        console.log(phraseFinale);
 
     </script>
 </body>
