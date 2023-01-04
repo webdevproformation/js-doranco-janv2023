@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 07-objet.html
+        // variable complexe 
+        // 1 variable qui permet de stocker plusieurs valeurs 
+        // tableau 
+        // objet 
+
+        const etudiantNovice = { // camelCase
+            nom : "Alain" , // attention propriétéDeLObjet : valeur
+            age : 32 ,
+            isAdmin : true ,
+            competences : ["js" , "html"],
+            adressePersonnel : {
+                rue : "75 rue de Paris" ,
+                cp : 75000 ,
+                ville : "Paris" 
+            },
+            parlerFort : function(){
+                console.log("bonjour")
+            },
+            parler_fort : function(){ // snake_case 
+                console.log("bonjour")
+            }
+        } ;
+        // gros avantage des objets => code est rangé 
+        // dans un objet propriété : valeurs 
+        //               propriété : fonction => méthode  
+
+        // en utilisant la variable etudiantNovice
+
+        // Alain apprend le js à Paris
+        console.log(`${etudiantNovice.nom } apprend le ${ etudiantNovice.competences[0]} à ${etudiantNovice.adressePersonnel.ville}`);
+        // concaténation avec un objet 
+
+        const formation = {
+            nom : "Developpeur WEB",
+            duree : 4 ,
+            unite : "semaine" ,
+            matieres : ["html" , "css" , "js"],
+            adresse : { 
+                rue : "75 rue de Lille",
+                ville : "Bagnolet"
+            }
+        }
+        // écrire dans la console les 3 phrases suivantes :
+        // la formation Developpeur WEB dure 4 semaines
+        console.log(`la formation ${formation.nom} dure ${formation.duree} ${formation.unite}s`);
+        // la formation a lieu à Bagnolet
+        console.log(`la formation a lieu à ${formation.adresse.ville}`) ;
+        // je vais y apprendre html css et js 
+        console.log(`je vais y apprendre ${formation.matieres[0]} ${formation.matieres[1]} et ${formation.matieres[2]}`) ;
+
+        //const adresse_professionnelle
+        const a = ["a","b","c"] ;
+        `${a[0]} ${a[1]} ${a[2]}` ;
+        
+        for(let i = 0 ; i < a.length ; i++){
+            `${a[i]} ` ;
+        }
+
+    </script>
+</body>
+</html>
