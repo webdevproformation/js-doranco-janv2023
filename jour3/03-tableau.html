@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 03-tableau.html
+        // array stocker dans une variable PLUSIEURS VALEURS 
+
+        // stocker le nom de plusieurs étudiants 
+        //si on n'avait pas les tableaux
+        const etudiant1 = "Alain" ;
+        const etudiant2 = "Benoit" ;
+        const etudiant3 = "Céline" ;
+
+        // Mais ce n'est pas pratique car je vais devoir créer autant de 
+        // variable que j'ai de nom d'étudiant à stocker 
+
+        const etudiants = ["Alain" , "Benoit" , "Céline"] ; 
+        //                   0          1           2 
+
+        // utiliser les valeurs qui sont stockées dans ce tableau 
+
+
+        // écrire la phrase suivante :
+        // Alain suit un cours de Javascript 
+        console.log(`${etudiants[0]} suit un cours de Javasscript`) ;
+        
+        // Céline apprend le HTML 
+        console.log(`${etudiants[2]} apprend le HTML`) ;
+
+        // concaténation avec un tableau 
+
+        const voiture = [10000 , "Peugeot" , "Alain" , 206 ] ;
+        //                  0       1           2       3
+
+        // Alain a acheté une Peugeot 206
+        console.log(`${voiture[2]} a acheté une ${voiture[1]} ${voiture[3]}`);
+
+        // il a dépensé 10000 euros pour sa Peugeot
+        console.log(`il a dépensé ${voiture[0]} euros pour sa ${voiture[1]}`) ;
+    </script>
+</body>
+</html>
+<!--
+    créer le fichier 04-exo.html
+    2/ la balise script contient une variable de type tableau :
+    - le nom de la variable est formation
+    - cette variable contient les 6 valeurs suivantes :
+    - HTML
+    - 2
+    - CSS
+    - 5
+    - semaines
+    - jours
+
+3/ afficher dans la console la phrase suivante en utilisant le tableau
+je suis une formation en HTML d'une durée de 5 jours
+
+4/ afficher dans la console la phrase suivante en utilisant le tableau
+il m'a fallu 2 semaines pour comprendre en détail CSS
+
+5/ afficher dans la console la phrase suivante en utilisant le tableau
+2 x 5 = 10
+
+6/ afficher dans la console la phrase suivante en utilisant le tableau
+HTML et CSS sont des langages clients
+-->
