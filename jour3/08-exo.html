@@ -15,18 +15,23 @@
             date : "5 janvier 2023" ,
             heure  : "17h00" ,
             questions : [
-                { id : 1 , tutu : "quel opérateur à utiliser pour une addition ?" },
-                { id : 2 , tutu : "quel opérateur pour une concaténation ?"}
+                { id : 1 , label : "quel opérateur à utiliser pour une addition ?" },
+                { id : 2 , label : "quel opérateur pour une concaténation ?"}
             ]
         }
 
         //le qcm aura lieu le 5 janvier 2023 à 17h00 pendant 10 minutes
         console.log(`le qcm aura lieu le ${exo.date} à ${exo.heure} pendant ${exo.duree} ${exo.unite}`);
         // la première question sera : quel opérateur à utiliser pour une addition ?
-        console.log(`la première question sera : ${exo.questions[0].tutu}`)
+        console.log(`la première question sera : ${exo.questions[0].label}`)
 
         const a = ["a" , 1 , true , [] , {} , function calcul (){}]
 
     </script>
 </body>
 </html>
+<!--
+    tableau qui contient des objets 
+    boucle et de la concaténation 
+    09-collection.html
+-->

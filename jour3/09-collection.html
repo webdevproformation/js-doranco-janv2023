@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:10px;
+        }
+
+        article {
+            border : 1px solid black;
+            border-radius: 5px;
+            padding: 10px ;
+        }
+        
+        article:first-child{
+            grid-column: span 2;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        // 09-collection.html
+        const bdd = [
+            { id : 1 , titre : "Article 1" , contenu : "lorem ipsum" , like : 0 },
+            { id : 2 , titre : "Article 2" , contenu : "lorem ipsum" , like : 10 },
+            { id : 3 , titre : "Article 3" , contenu : "lorem ipsum" , like : 0 },
+            { id : 4 , titre : "Article 4" , contenu : "lorem ipsum" , like : 20 },
+            { id : 5 , titre : "Article 5" , contenu : "lorem ipsum" , like : 50 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+            { id : 6 , titre : "Article 6" , contenu : "lorem ipsum" , like : 200 },
+        ]
+
+        // écrire dans la console le texte suivant 
+        // <article>
+        // <h2>Article 3</h2>
+        // <p>lorem ipsum</p>
+        // <button>0</button>
+        // </article>
+
+        let html = `
+            <article>
+                <h2>${bdd[2].titre}</h2>
+                <p>${bdd[2].contenu}</p>
+                <button>${bdd[2].like}</button>
+            </article>
+        `; 
+
+        console.log(html);
+        // echo  $html;
+
+        // écrire dans la console le texte suivant 
+        // <article>
+        // <h2>Article 2</h2>
+        // <p>lorem ipsum</p>
+        // <button>10</button>
+        // </article>
+        
+        // <article>
+        // <h2>Article 3</h2>
+        // <p>lorem ipsum</p>
+        // <button>0</button>
+        // </article>
+
+        // <article>
+        // <h2>Article 4</h2>
+        // <p>lorem ipsum</p>
+        // <button>20</button>
+        // </article>
+
+        let html2 = `
+            <article>
+                <h2>${bdd[1].titre}</h2>
+                <p>${bdd[1].contenu}</p>
+                <button>${bdd[1].like}</button>
+            </article>
+            <article>
+                <h2>${bdd[2].titre}</h2>
+                <p>${bdd[2].contenu}</p>
+                <button>${bdd[2].like}</button>
+            </article>
+            <article>
+                <h2>${bdd[3].titre}</h2>
+                <p>${bdd[3].contenu}</p>
+                <button>${bdd[3].like}</button>
+            </article>
+        `; 
+        
+        let html3 = "";
+        for(let i = 0 ; i < bdd.length ;  i++){
+            html3 = html3 + `<article>
+                <h2>${bdd[i].titre}</h2>
+                <p>${bdd[i].contenu}</p>
+                <button>${bdd[i].like}</button>
+            </article>`
+        }
+        //console.log(html3);
+        document.querySelector("div").innerHTML = html3; 
+
+    </script>
+</body>
+</html>
