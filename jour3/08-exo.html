@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const exo = {
+            sujet : "évaluation javascript" ,
+            duree : 10 ,
+            unite : "minutes" ,
+            date : "5 janvier 2023" ,
+            heure  : "17h00" ,
+            questions : [
+                { id : 1 , tutu : "quel opérateur à utiliser pour une addition ?" },
+                { id : 2 , tutu : "quel opérateur pour une concaténation ?"}
+            ]
+        }
+
+        //le qcm aura lieu le 5 janvier 2023 à 17h00 pendant 10 minutes
+        console.log(`le qcm aura lieu le ${exo.date} à ${exo.heure} pendant ${exo.duree} ${exo.unite}`);
+        // la première question sera : quel opérateur à utiliser pour une addition ?
+        console.log(`la première question sera : ${exo.questions[0].tutu}`)
+
+        const a = ["a" , 1 , true , [] , {} , function calcul (){}]
+
+    </script>
+</body>
+</html>
