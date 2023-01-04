@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        const bdd = [
+            { id : 1 , nom : "Alain" , competences : ["js" , "html" , "css"] },
+            { id : 2 , nom : "Benoit" , competences : [ "css" ] },
+            { id : 3 , nom : "Céline" , competences : ["js" , "html" ] },
+            { id : 4 , nom : "Zorro" , competences : ["js" , "html" , "css" , "php"] },
+        ];
+
+        let html = "";
+        for(let i = 0; i < bdd.length ; i++){
+            html += `
+            <div>
+                <h2>${bdd[i].nom}</h2>
+                <ul>`
+                    for(let j = 0 ; j < bdd[i].competences.length ; j++){
+                        html += `<li>${bdd[i].competences[j]}</li>`
+                    }
+            html += `</ul>
+            </div>
+            `
+        }
+
+        document.querySelector("div").innerHTML = html 
+
+
+    </script>
+</body>
+</html>
