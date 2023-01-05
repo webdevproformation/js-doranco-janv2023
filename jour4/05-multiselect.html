@@ -14,7 +14,6 @@
         // 1er p remplir avec le texte premier p
         // 2ème p remplir avec le texte je suis le 2ème p
         // 3ème p remplir avec le texte je suis le dernier p 
-
         document.querySelector("p").innerText = "premier p" ; 
         // la méthode querySelector() ne permet de sélectionner QUE la première balise 
         document.querySelectorAll("p")[0].innerText = "premier p" ; 
@@ -22,9 +21,7 @@
         document.querySelectorAll("p")[1].innerText = "je suis le 2ème p <p>tutu</p>"  ;
         // [ p , p , p ]
         document.querySelectorAll("p")[2].innerHTML = `<a href="#">lien</a> <p>tutu</p>` ;
-
         // *
-
     </script>
 </body>
 </html>
@@ -40,5 +37,4 @@
     remplir le 1er p avec le texte lorem ipsum
     remplir le 2ème et le 3ème p avec le texte je découvre le DOM 
     remplir le dernier p avec le texte end 
-
 -->
