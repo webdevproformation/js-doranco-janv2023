@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.addEventListener( "DOMContentLoaded", function(){
+            console.log(window.document.querySelector("h2").innerText)
+            // window.document.querySelector(...) is null
+        })
+        window.onload = function(){
+            console.log(window.document.querySelector("h2").innerText)
+        }
+    </script>
+    <h1>tutu je suis le titre modification</h1>
+    <p class="toto">je suis un paragraphe</p>
+    <h2 id="fin">je suis la conclusion</h2>
+    <!-- la balise script DOIT être écrite à la suite des balises html de la page 
+    une bonne pratique => mettre la balise script à côté de la balise body fermante 
+    -->
+    <script>
+        // via javascript récupérer le texte qui est écrit dans la balise h1 
+        const texteH1 = window.document.querySelector("h1").innerText ;
+        console.log(texteH1);
+
+        //  récupérer le texte écrit dans la balise p et l'afficher dans la console 
+        const texteP = window.document.querySelector("p").innerText
+        console.log(texteP);
+
+        console.log(window.document.querySelector("p").innerText)
+    </script>
+</body>
+</html>
