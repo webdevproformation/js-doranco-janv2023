@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = { // membre de l'objet de l'objet 
+            nom : "Alain", // propriété
+            age : 12,
+            toto : false,
+            adresse : {},
+            infos : [] , 
+            parler : function(){} // méthode / propriété stocke une fonction 
+        //  cle : valeur 
+         }
+        console.log(a);
+        console.log(window); // regarder dans la console 
+        // location
+        // document
+        // console 
+
+        // const window = { ... }
+
+        const win = {
+            document : {
+                getElementById : function(){ // factory 
+                    const a = "...."
+                    const b = "...."
+                    return {a : a , b : b} 
+                    // permet de recupérer traitement / variable stockée dans une fonction 
+
+                },
+                querySelector : function(){
+                    return {}
+                } ,
+                querySelectorAll : function(){
+                    return {}
+                }
+            }
+        }
+    </script>
+</body>
+</html>

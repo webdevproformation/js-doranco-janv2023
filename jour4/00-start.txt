@@ -1,0 +1,26 @@
+// à partir de maintenant => Spécifique à javascript 
+
+// Manipulation du DOM 
+
+Document Object Model => Javascript est un langage spécialisé dans la manipulation gestion des pages web 
+
+let true const var false ; = ++
+
+Quand vous lancez une page web, AUTOMATIQUEMENT Javascript va créer une variable 
+
+window 
+- tout en minuscule
+- ne pas conforme cette variable avec le Système d'exploiration Windows
+- c'est un objet 
+
+window === {}
+
+l'objet window contient plus de 200 propriétés 
+window = {
+    location : permet de manipuler la barre d'adresse 
+    document : partie centrale de la page xxxxxxxxxxxx
+    console  xxxxxxxxxxxxxxxx
+    ....
+}
+
+01-window.html
