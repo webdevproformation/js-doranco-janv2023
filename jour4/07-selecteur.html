@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #conclusion li:first-child{
+            color: red ;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1+h2.first+(ul.intro>li*2)+ul#conclusion>li*2 -->
+    <h1></h1>
+    <h2 class="first"></h2>
+    <ul class="intro">
+        <li></li>
+        <li></li>
+    </ul>
+    <ul id="conclusion">
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        // utilisation du nom de la balise html pour la sélectionner avec js 
+        document.querySelector("h1").innerText = "les sélecteurs javascript";
+
+        document.querySelector("h2").innerText = "titre 2" ;
+        // il est possible d'utiliser l'attribut class de la balise h2 pour la selectionner 
+        document.querySelector(".first").innerText = "titre 2" ;
+
+        // vous pouvez utiliser des sélecteurs css complexe
+        // le dernier li dans la balise ayant la class .intro
+        document.querySelector(".intro li:last-child").innerText = "dernier li" ;
+
+        document.querySelector("#conclusion li:first-child").innerHTML = `<a href="#">lien</a>` ;
+
+        document.querySelectorAll("li")[2].innerHTML += `modification` ;
+
+    </script>
+</body>
+</html>
