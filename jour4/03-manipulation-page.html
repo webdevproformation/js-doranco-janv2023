@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <div></div>
+    <h2></h2>
+    <script>
+        // remplir la balise h1 avec le texte "je découvre javascript"
+
+        const a = window.document.querySelector("h1").innerText ; // récupérer le texte // getter
+        
+        window.document.querySelector("h1").innerText = "je découvre javascript" ; 
+        // remplir avec le texte "je découvre javascript" la balise h1  // setter 
+        // console.log(a); // "" <empty string>
+
+        // remplir la balise div avec le texte suivant
+        // <ul>
+        // <li>les bases</li>
+        // <li>le DOM</li>
+        // </ul>
+        window.document.querySelector("div").innerText = `<ul>
+                                                                <li>les bases</li>
+                                                                <li>le DOM</li>
+                                                          </ul>`;
+
+        window.document.querySelector("div").innerHTML = `<ul>
+                                                                <li>les bases</li>
+                                                                <li>le DOM</li>
+                                                          </ul>`;
+        // avant l'ajout des `` pour faire un texte avec saut de ligne dedans 
+        let html = "<ul>"
+            html += "<li>les bases</li>"
+            html += "<li>le DOM</li>"
+            html += "</ul>"
+        
+        window.document.querySelector("div").innerHTML = html
+
+        // const prenomPrincipal camelCase
+        // const prenom_principal snake_case
+        // const PrenomPrincipal PascalCase
+        // const Prenom_Principal Kebab_Case
+        // const prenomPRINCIPAL 
+        // `` backtick AltGr + 7
+        
+
+        // remplir la balise h2 avec le texte suivant 
+        // conclusion <a href="https://google.fr">voir la suite</a>
+
+
+        window.document.querySelector("h2").innerHTML = "conclusion <a href=\"https://google.fr\">voir la suite</a>" ; 
+        // \" échapper le caractère guillemet => attention le " c'est le caractère guillemet et non la caractère qui fini la chaine de caractère
+
+        window.document.querySelector("h2").innerHTML = `conclusion <a href="https://google.fr">voir la suite</a>` ; 
+
+        window.document.querySelector("h2").innerHTML = 'conclusion <a href="https://google.fr">voir la suite</a>' ;
+
+
+        // window => objet global implicite 
+
+        document.querySelector("h2").innerHTML = `conclusion <a href="https://google.fr">voir la suite</a>` ; 
+
+        // const window.tt = "....."
+    </script>
+</body>
+</html>
