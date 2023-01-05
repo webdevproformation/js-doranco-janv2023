@@ -19,8 +19,18 @@ l'objet window contient plus de 200 propriétés
 window = {
     location : permet de manipuler la barre d'adresse 
     document : partie centrale de la page xxxxxxxxxxxx
-    console  xxxxxxxxxxxxxxxx
+    console  : xxxxxxxxxxxxxxxx
     ....
 }
 
 01-window.html
+
+https://formation.webdevpro.net/js-initiation
+login js
+password : initiation
+
+https://formation.webdevpro.net/js-dom
+login js
+password : web
+
+malik.h@webdevpro.net

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+        // 1er p remplir avec le texte premier p
+        // 2ème p remplir avec le texte je suis le 2ème p
+        // 3ème p remplir avec le texte je suis le dernier p 
+
+        document.querySelector("p").innerText = "premier p" ; 
+        // la méthode querySelector() ne permet de sélectionner QUE la première balise 
+        document.querySelectorAll("p")[0].innerText = "premier p" ; 
+        // équivalent avec querySelectorAll("p")[0]
+        document.querySelectorAll("p")[1].innerText = "je suis le 2ème p <p>tutu</p>"  ;
+        // [ p , p , p ]
+        document.querySelectorAll("p")[2].innerHTML = `<a href="#">lien</a> <p>tutu</p>` ;
+
+        // *
+
+    </script>
+</body>
+</html>
+<!--
+    créer le fichier 06-exo.html
+    balise h1 
+    2 paragraphes vides
+    h2
+    2 paragraphes vides
+    puis une balise script 
+    remplir le h1 avec le texte exo 6
+    remplir le h2 avec le texte conclusion
+    remplir le 1er p avec le texte lorem ipsum
+    remplir le 2ème et le 3ème p avec le texte je découvre le DOM 
+    remplir le dernier p avec le texte end 
+
+-->
