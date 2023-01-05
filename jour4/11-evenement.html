@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>action1</button>
+    <button>action2</button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia tenetur officia, provident ea magni iusto reprehenderit cum placeat natus autem ipsa non laboriosam neque optio culpa blanditiis sunt id quisquam.</p>
+    <script>
+        // si je clique sur le bouton 1 => le texte dans le p 16px => 32px
+        // si je clique sur le bouton 2 => inverse 
+        /* document.querySelectorAll("button")[0].innerHTML
+        document.querySelectorAll("button")[0].innerText */
+
+        /* document.querySelectorAll("button")[0].setAttribute
+        document.querySelectorAll("button")[0].classList
+        document.querySelectorAll("button")[0].dataset */
+
+        function action1(){
+            document.querySelector("p").style.fontSize = "32px"
+        }
+
+        document.querySelectorAll("button")[0].addEventListener("click", action1)
+        // permet d'associer à une balise 
+        // evenement <=> action 
+
+        function action2(){
+            document.querySelector("p").style.fontSize = "16px";
+        }
+
+        document.querySelectorAll("button")[1].addEventListener("click" , action2)
+
+    </script>
+</body>
+</html>

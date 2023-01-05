@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1 data-stock="10" data-prix="800">PlayStation5</h1>
+    <h1 data-stock="9" data-prix="200">PlayStation4</h1>
+    <script>
+        // ajouter dans la balise p l'attribut id="decouverte"
+        document.querySelector("p").setAttribute("id", "decouverte");
+
+        document.querySelector("p").setAttribute("class", "first last");
+
+        document.querySelector("p").classList.add("first")
+        document.querySelector("p").classList.add("last")
+
+        document.querySelector("p").dataset.couleur = "blue"
+        // permet de stocker des valeurs complémentaires dans la balise 
+        /* const h1 = document.querySelectorAll("h1")
+
+        for(let i = 0 ; i < h1.length; i++){
+            h1[i].addEventListener("mousemove" , function(){
+                const prix = h1[i].dataset.prix + "euros";
+                const stock = h1[i].dataset.stock ;
+                const message = `attention stock de ${stock} Playstation 5 à ${prix} euros`
+                h1[i].setAttribute("title", message);
+            })
+        } */
+    </script>
+</body>
+</html>
+<!--
+    créer le fichier 10-exo.html 
+
+    dans ce fichier vous allez ajouter 5 p 
+
+    pour le 1er p vous allez remplir de texte "bonjour" ajouter l'attribut id="first"
+    pour le 2ème p vous allez remplir de texte "second" ajouter l'attribut class="deuxieme"
+    pour le 3eme et 4eme p vous allez remplir de texte "comment allez vous " ajouter 
+    l'attribut class="info" et la class="details"
+    pour le dernier p remplir de texte "fin" et vous allez luis ajouter id="last" et la 
+    class="end"
+
+-->

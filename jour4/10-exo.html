@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+        const p = document.querySelectorAll("p"); 
+        /* document.querySelectorAll("p")[0].innerText = "bonjour" 
+        document.querySelectorAll("p")[0].setAttribute("id", "first")*/
+        p[0].innerText = "bonjour"
+        p[0].setAttribute("id", "first")
+
+        p[1].innerText = "second";
+        // p[1].setAttribute("class" , "second");
+        p[1].classList.add("second") ;
+
+        for(let i = 2 ; i <= 3 ; i++){
+            p[i].innerText = "comment allez vous";
+            p[i].setAttribute("class" , "info details") ;
+        }
+
+        p[4].innerText = "fin" ;
+        p[4].setAttribute ("id" , "last") ;
+        p[4].setAttribute ("class" , "end") ;
+
+        // supprimer un attribut
+        p[0].removeAttribute("id"); 
+
+    </script>
+</body>
+</html>
+<!-- 11-evenement.html -->
