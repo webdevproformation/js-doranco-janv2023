@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <style>
+        div{
+            width:820px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+    </style>
+    <script>
+        // creations[0].technologies[0]
+        const creations = [
+            {
+                img : "https://source.unsplash.com/random/400x200" ,
+                url : "http://projet1.com",
+                client : "BNPParibas",
+                technologies : [ "HTML" , "CSS" , "Javascript" ]
+            },
+            {
+                img : "https://source.unsplash.com/random/400x201" ,
+                url : "http://projet2.com",
+                client : "Axa",
+                technologies : [ "HTML" , "Bootstrap" ]
+            }
+        ];
+
+        const html = `
+        <article>
+            <img src="${creations[0].img}" alt="">
+            <p>url : ${creations[0].url}</p>
+            <p>client : ${creations[0].client}</p>
+            <ul>
+                <li>${creations[0].technologies[0]}</li>
+                <li>${creations[0].technologies[1]}</li>
+                <li>${creations[0].technologies[2]}</li>
+            </ul>
+        </article>
+        <article>
+            <img src="${creations[1].img}" alt="">
+            <p>url : ${creations[1].url}</p>
+            <p>client : ${creations[1].client}</p>
+            <ul>
+                <li>${creations[1].technologies[0]}</li>
+                <li>${creations[1].technologies[1]}</li>
+            </ul>
+        </article>` ;
+
+        let html2 = "";
+
+        for(let i = 0 ; i < creations.length ; i++){
+            html2 += `<article>
+                <img src="${creations[i].img}" alt="">
+                <p>url : ${creations[i].url}</p>
+                <p>client : ${creations[i].client}</p>
+                <ul>`
+                    for(let j = 0 ; j < creations[i].technologies.length ; j++){
+                        html2 += `<li>${creations[i].technologies[j]}</li>`
+                    }
+            html2 += `</ul>
+            </article>`
+        }
+        document.querySelector("div").innerHTML = html2
+
+    </script>
+</body>
+</html>
