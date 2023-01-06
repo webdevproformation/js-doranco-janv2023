@@ -34,3 +34,21 @@ document.querySelector("p").dataset
 document.querySelector("p").style
 
 document.querySelector("p").addEventListener()
+
+créer le dossier jour5
+dans créer le fichier 01-exo.html 
+
+dans cefichier vous allez ajouter 5 balises html 
+
+h1 
+img
+deux paragraphes 
+h2 
+
+avec javascript vous allez manipuler ces balises
+dans la balise h1 remplir du texte suivante : "jour5" et ajouter attribut id="titre-principal"
+dans la balise image vous allez modifier l'attribut src pour lui donner la valeur https://via.placeholder.com/400x200
+
+dans les 2 p remplir avec le texte "lorem ipsum"
+dans le h2 remplir avec le texte lire la suite <a href="#">lien</a> 
+
