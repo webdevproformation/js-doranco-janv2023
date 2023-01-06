@@ -1,0 +1,36 @@
+Qu'est ce que l'on a vu hier ?
+
+=> DOM Document Object Model 
+
+window 
+    - location 
+    - document 
+    - console 
+
+window est un objet global implicite 
+
+document la propriété de window qui permet de gérer / manipuler le contenu html des pages web 
+
+document.querySelector("p")
+document.querySelector(".info")
+document.querySelector("#element")
+document.querySelector(".info li:last-child")
+
+document.querySelectorAll() => attention cette méthode retourne un [ ]
+
+document.querySelectorAll("p")[0] ;
+
+const p = document.querySelectorAll("p") ;
+p[0]
+
+
+document.querySelector("p").innerText 
+document.querySelector("p").innerHTML
+
+document.querySelector("p").setAttribute()
+document.querySelector("p").removeAttribute()
+document.querySelector("p").classList
+document.querySelector("p").dataset
+document.querySelector("p").style
+
+document.querySelector("p").addEventListener()
