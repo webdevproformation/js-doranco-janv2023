@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <button>Menu</button>
+        <ul>
+            <li>x</li>
+            <li>Accueil</li>
+            <li>Blog</li>
+            <li>Nous contacter</li>
+        </ul>
+       
+    </nav>
+   
+    <style>
+        ul{
+            width: 200px;
+            background: rgba(0,0,0,0.4); /* red green blue alpha */
+            color: white;
+            min-height: 100vh; /* viewport height unité relative à la taille de l'écran 100% de l'écran*/
+            padding: 20px ;
+            position: relative;
+        }
+        ul li:first-child{
+            position: absolute;
+            top:10px;
+            right: 10px;
+            list-style: none;
+            cursor: pointer;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        /* effet en css */
+        ul{
+            transform: translateX(-260px);
+            transition: 1s transform;
+        }
+        ul.show{
+            transform: translateX(0px);
+        }
+    </style>
+    <script>
+        function afficherMenu(){
+            document.querySelector("ul").classList.add("show")
+        }
+        document.querySelector("button").addEventListener("click" , afficherMenu)
+
+        function masquerMenu(){
+            document.querySelector("ul").classList.remove("show")
+        }
+        document.querySelector("ul li:first-child").addEventListener("click", masquerMenu)
+    </script>
+</body>
+</html>
