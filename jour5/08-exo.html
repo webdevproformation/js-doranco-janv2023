@@ -5,29 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            margin: 0 auto;
+            width: 960px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <article><!-- reproduire cette page en utilisant variable / boucle / injection -->
-            <h2>apprendre js</h2>
-            <p>les bases de javascript</p>
-            <p>durée : 2 semaines</p>
-        </article>
-        <article>
-            <h2>apprendre html</h2>
-            <p>les bases du langage HyperText Markup Langage</p>
-            <p>durée : 1 semaine</p>
-        </article>
-        <article>
-            <h2>apprendre CSS</h2>
-            <p>les bases du CSS et designer en responsive</p>
-            <p>durée : 3 semaines</p>
-        </article>
-        <article>
-            <h2>apprendre Bootstrap</h2>
-            <p>la librairie de référence </p>
-            <p>durée : 3 jours</p>
-        </article>
-    </div>
+    <div></div>
+    <script>
+        const formation = [
+            {
+                titre : "apprendre js",
+                description : "les bases de javascript",
+                duree : "1 semaine"
+            },
+            {
+                titre : "apprendre html",
+                description : "les bases du langage HyperText Markup Langage",
+                duree : "3 semaines"
+            },
+            {
+                titre : "apprendre CSS",
+                description : "les bases du CSS et designer en responsive",
+                duree : "3 semaines"
+            },
+            {
+                titre : "apprendre Bootstrap",
+                description : "la librairie de référence ",
+                duree : "3 jours"
+            }
+        ];
+
+        let html = "";
+        for(let i = 0 ; i < formation.length ; i++){
+            html += `<article>
+            <h2>${formation[i].titre}</h2>
+            <p>${formation[i].description}</p>
+            <p>durée : ${formation[i].duree}</p>
+        </article>`
+        }
+        document.querySelector("div").innerHTML = html ;
+
+    </script>
 </body>
 </html>
