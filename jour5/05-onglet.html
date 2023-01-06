@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .masquer{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button data-index="0">Onglet 1</button>
+    <button data-index="1">Onglet 2</button>
+    <button data-index="2">Onglet 3</button>
+    <p>coucou les amis</p>
+    <p class="masquer">je suis le texte de l'onglet 2</p>
+    <p class="masquer">plein de texte</p>
+    <script>
+        // si je clique sur le 1er p => afficher le 1er p et masquer les autres p 
+       /*  const button = document.querySelectorAll("button") // [button, button, button]
+        const p = document.querySelectorAll("p") // [p, p, p]
+
+        for(let i = 0 ; i < button.length ; i++){
+            button[i].addEventListener("click" , function(){
+                const index = button[i].dataset.index;
+                for(let j = 0 ; j < p.length; j++){
+                    p[j].classList.add("masquer")
+                }
+                p[index].classList.remove("masquer")
+            })
+        } */
+
+        function action1(){
+            document.querySelectorAll("p")[0].classList.remove("masquer")
+            document.querySelectorAll("p")[1].classList.add("masquer")
+            document.querySelectorAll("p")[2].classList.add("masquer")
+        }
+
+        document.querySelectorAll("button")[0].addEventListener("click" , action1)
+
+
+        function action2(){
+            document.querySelectorAll("p")[0].classList.add("masquer")
+            document.querySelectorAll("p")[1].classList.remove("masquer")
+            document.querySelectorAll("p")[2].classList.add("masquer")
+        }
+
+        document.querySelectorAll("button")[1].addEventListener("click" , action2)
+
+
+        function action3(){
+            document.querySelectorAll("p")[0].classList.add("masquer")
+            document.querySelectorAll("p")[1].classList.add("masquer")
+            document.querySelectorAll("p")[2].classList.remove("masquer")
+        }
+
+        document.querySelectorAll("button")[2].addEventListener("click" , action3)
+
+    </script>
+
+
+</body>
+</html>
