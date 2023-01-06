@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>action1</button>
+    <button>action2</button>
+    <script>
+        function toto(){
+            console.log(`j'ai cliqué sur le bouton 1`)
+        }
+
+        document.querySelectorAll("button")[0].addEventListener("click" , toto)
+
+        // callback 
+        document.querySelectorAll("button")[1].addEventListener("click" , function(){})
+
+    </script>
+</body>
+</html>
