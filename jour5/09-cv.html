@@ -7,7 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div></div>
+    <div>
+        <article>
+            <img src="https://source.unsplash.com/random/400x200" alt="">
+            <p>url : http://projet1.com</p>
+            <p>client : BNPParibas</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </article>
+        <article>
+            <img src="https://source.unsplash.com/random/400x201" alt="">
+            <p>url : http://projet2.com</p>
+            <p>client : Axa</p>
+            <ul>
+                <li>HTML</li>
+                <li>Bootstrap</li>
+            </ul>
+        </article>
+    </div>
     <style>
         div{
             width:820px;
@@ -19,18 +39,25 @@
     </style>
     <script>
         // creations[0].technologies[0]
+        // créer une variable creations = [{},{}]
         const creations = [
             {
                 img : "https://source.unsplash.com/random/400x200" ,
                 url : "http://projet1.com",
                 client : "BNPParibas",
-                technologies : [ "HTML" , "CSS" , "Javascript" ]
+                technologies : [ "HTML" , "CSS" , "Javascript" , "angular" , "react"]
             },
             {
                 img : "https://source.unsplash.com/random/400x201" ,
                 url : "http://projet2.com",
                 client : "Axa",
                 technologies : [ "HTML" , "Bootstrap" ]
+            },
+            {
+                img : "https://source.unsplash.com/random/400x202" ,
+                url : "http://projet3.com",
+                client : "Axa2",
+                technologies : [ "HTML" ]
             }
         ];
 
@@ -71,6 +98,19 @@
         }
         document.querySelector("div").innerHTML = html2
 
+
+        const a = [
+            {
+                nom : "Alain" , 
+                age : 12
+            },
+            {
+                nom : "Alain"
+            } , 
+            {
+                age : 12
+            },
+        ]
     </script>
 </body>
 </html>
