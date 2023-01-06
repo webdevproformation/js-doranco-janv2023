@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="07-style.css">
+</head>
+<body>
+    <div></div>
+    <script>
+        // 1 extrait les textes et les urls qui sont dans le html => rangé dans une variable 
+        const articles = [
+            { 
+                titre : "Article 1" , 
+                url : "https://via.placeholder.com/400x200" , 
+                texte : "je suis le premier article" 
+            },
+            {
+                titre : "Article 2" , 
+                url : "https://via.placeholder.com/400x200" , 
+                texte : "je suis le deuxieme article"
+            } ,
+            {
+                titre : "Article 3" , 
+                url : "https://via.placeholder.com/400x200" , 
+                texte : "je suis le troisième article"
+            },
+            {
+                titre : "Article 4" , 
+                url : "https://via.placeholder.com/400x200" , 
+                texte : "je suis le troisième article"
+            },
+            {
+                titre : "Article 5" , 
+                url : "https://via.placeholder.com/400x200" , 
+                texte : "je suis le troisième article"
+            }
+        ]
+        // 2 regénérer le html en utilisant la variable ET utilisant la concaténation 
+        const html = `
+            <article>
+                <h2>${articles[0].titre}</h2>
+                <img src="${articles[0].url}" alt="" >
+                <p>${articles[0].texte}</p>
+            </article>
+            <article>
+                <h2>${articles[1].titre}</h2>
+                <img src="${articles[1].url}" alt="" >
+                <p>${articles[1].texte}</p>
+            </article>
+            <article>
+                <h2>${articles[2].titre}</h2>
+                <img src="${articles[2].url}" alt="" >
+                <p>${articles[2].texte}</p>
+            </article>
+        `;
+        // 3 dans la concaténation précédente => il y a de la répétition ( boucle )
+        let html2 = "" ;
+        for(let i = 0 ; i < articles.length ; i++){
+            html2 += `<article>
+                <h2>${articles[i].titre}</h2>
+                <img src="${articles[i].url}" alt="" >
+                <p>${articles[i].texte}</p>
+            </article>`
+        }
+
+        // 4 remplir la balise div avec le contenu de la variable html2 qui contient du html
+        document.querySelector("div").innerHTML = html2 ; 
+
+
+    </script>
+</body>
+</html>
