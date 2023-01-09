@@ -67,3 +67,5 @@ document.querySelector() / document.querySelectorAll()
 
 // très complémentaire avec tous les points vus la semaine dernière !!! 
 
+// 02-install.html
+
