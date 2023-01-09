@@ -10,7 +10,26 @@
     <p></p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
-        
+        // js de base 
+        // remplir le p avec le texte bonjour les amis 
+        // document.querySelector("p").innerText = "bonjour les amis";
+
+        // avec jQuery
+        $("p") // le sélecteur DOM // sélectioner la balise p 
+        $("p").text("bonjour les amis"); // une fois que la balise est sélectionnée jquery dispose d'une méthode .text("le texte à remplir")
+        $("p").text('bonjour les amis'); 
+
+        $("p").text(`bonjour les amis`); 
+        // ça ne marche : $("p").text = "bonjour" 
+        // ça ça marche : $("p").text("bonjour") ;
     </script>
 </body>
 </html>
+<!--
+    créer le fichier 06-exo.html
+    dans ce fichier vous allez avoir deux balises : h1 et un p
+    installer jquery
+    via jquery réaliser les modifications du DOM suivant :
+    remplir la balise h1 avec le texte "exo 6"
+    remplir la balise p avec le texte "lorem ipsum ..."
+-->
