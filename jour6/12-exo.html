@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
+        // $(document).ready(function(){}) // synonyme
         $(function(){ // attend que les balises html de la page soient chargées 
            // question 1
            $("h1").text("attendre le chargement").css("text-align", "center");
@@ -26,6 +27,11 @@
            $("p").first().css("color", "pink");
            $("p").last().css({"font-size" : 50 , "text-align" : "center"});
         });
+        // javascript / jQuery permet de modifier le DOM => texte / style
+
+        // css => permet de réaliser la mise en page par défaut du la page 
+
+        // css et javascript / jQuery sont COMPLEMENTAIRES et non des CONCURRENTS
     </script>
 </head>
 <body>
