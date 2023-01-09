@@ -1,0 +1,17 @@
+
+
+url : https://formation.webdevpro.net/js-initiation/ (dans la barre d'adresse)
+login : js 
+password : initiation
+
+---------------
+
+https://formation.webdevpro.net/js-dom
+login js
+password : web
+
+---------------
+
+https://formation.webdevpro.net/jquery
+login js
+password : jquery
