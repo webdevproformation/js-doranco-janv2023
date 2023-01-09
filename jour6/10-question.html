@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // d'abord le ou les balises
+        // script installé jquery
+        // script => notre code 
+
+        // l'ordre est ESSENTIEL pour le code fonctionne 
+        // erreur => les balises ne sont pas encore présentes dans la RAM
+       
+        // il ne se passe RIEN 
+        // le code est exécuté AVANT le chargement des balises
+        /* document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("h1").innerText = "ça marche ??";
+        }) */
+        // Uncaught TypeError: document.querySelector(...) is null
+
+        // comment ce cas ?? il faut dire à javascript ou jQuery ATTEND que la page soit chargée pour executer le sélecteur 
+        // emballer le code dans   document.addEventListener("DOMContentLoaded", function(){ ... })
+
+        // exactement comme pour js de base, il faut dire à jQuery ATTEND que la page soit chargéen pour exécuter le sélecteur 
+        /* $(document).ready(function(){ // dire à jQuery ATTEND que la page soit chargée
+            $("h1").text("ça marche ??");  
+        }); */
+
+        $(function(){
+            $("h1").text("ça marche ??");  
+        });
+    </script>
+</head>
+<body>
+    
+    <h1></h1>
+    <!-- 
+        .. je le code ici APRES les balises => je sais que les balises html sont bien mémoires (dans la RAM)
+    -->
+</body>
+</html>
