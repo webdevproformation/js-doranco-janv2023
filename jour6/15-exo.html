@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="titre">Menu</h1>
+  <ul>
+    <li><a href="#">Lorem ipsum dolor.</a></li>
+    <li class="item"><a href="#">Nulla, modi, beatae?</a></li>
+    <li><a href="#">Illum, iste, explicabo!</a></li>
+    <li><a href="#">Debitis, deleniti, id?</a> <a href="#">Debitis, deleniti, id?</a> <a href="#">Debitis, deleniti, id?</a> <a href="#">Debitis, deleniti, id?</a></li>
+    <li><a href="#">Facilis, sapiente, ad.</a></li>
+  </ul>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+        $("li:first-of-type a").text("nouvel article")
+        $("li").eq(0).find("a").eq(0).text("nouvel article")
+
+        $("a").eq(2).html(`<b>information technique</b>`)
+        
+        $("a").last().text("fin");
+
+        $(".item").html(" <p>un peu de texte ajouté via le script</p>");
+
+        $("h1").prepend("prefix ")
+               .append(" suffixe")
+               .after("<hr>")
+               .before("<p>un peu de texte</p>");
+               
+
+  </script>
+</body>
+</html>
