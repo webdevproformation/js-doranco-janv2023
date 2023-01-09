@@ -3,13 +3,16 @@ Set up ( préparer son ordinateur pour réaliser le cours
 
 => Installer Visual Studio Code => https://code.visualstudio.com/
 
-=> extension à installer :
+=> 2 extensions à installer :
 => Zoom Bar 
 => Live Server 
 
-=> paramétrage : 
+=> 1 paramétrage (comportement d'un logiciel) : 
 => retour à la ligne automatique si la largeur de la  phrase > largeur écran
-Roue dentée > Setting (paramètres) > wrap (recherche) > menu déroulant Editor: Word Wrap (on)
+Roue dentée > Setting (paramètres) > wrap ( input de recherche) > menu déroulant Editor: Word Wrap (on)
+
+Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem 
+
 
 ----------------------
 
@@ -18,11 +21,49 @@ jQuery ???
 
 => librairie  : fichier qui contient PLEIN PLEIN DE FONCTIONS
                 qui facilitent la vie du Développeur 
-                plus rapidement coder dans le langage Javascript 
+                plus rapidement coder / travailler plus vite avec le langage Javascript 
 
 => la spacialité de Javascript => Manipulation du DOM 
 => jQuery va permettre de plus facilement manipuler le DOM
 
-si vous avez bien compris => document.querySelector().innerHTML )
+si vous avez bien compris => document.querySelector().innerHTML 
 
+jQuery librairie Javascript permettant de travailler rapidement et facilement le DOM 
+
+=> plus vite qu'avec le Javascript Natif / Javascript Vanilla (js sans librairie)
+
+=> javascript => 1995
+=> jQuery => 2006  (l'invention de jQuery a été une révolution dans la création de page web)
+=> beaucoup d'influence sur toutes les librairies créées APRES jQuery 
+
+=> le site officielle de la librairie => https://jquery.com/
+
+=> Download 
+=> Api Documentation 
+
+=> l'esprit de cette librairie : write less , do more (écrire moins de code js MAIS réaliser autant voire plus de code qu'avec js )
+
+=> jQuery était CENTRAL dans les années 2010 
+=> à partir de 2015, jQuery est un peu moins central qu'il était 
+=> 2015 et la version 6 du langage Javascript (ajout de nouveaux mot clés dans le langage )
+document.querySelector() / document.querySelectorAll()
+
+Avant entre 1995 - 2006
+document.getElementById() uniquement pour la balise ayant un attribut id 
+document.getElementsByTagName() pour sélectionner les balises via le nom / tag 
+document.getElementsByClassName() pour sélectionner les balises via leur class 
+getElementsByName()
+
+2006 - 2015 
+jQuery  => $()
+
+2015 - 2023 
+document.querySelector() / document.querySelectorAll()
+
+// liste des 10 millions de sites internet les plus consultés dans le monde 
+// https://w3techs.com/technologies/overview/javascript_library
+
+// moins à la mode MAIS ça reste une technologie A CONNAITRE car très utilisée 
+
+// très complémentaire avec tous les points vus la semaine dernière !!! 
 
