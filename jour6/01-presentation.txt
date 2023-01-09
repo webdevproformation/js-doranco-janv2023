@@ -1,6 +1,17 @@
+Set up ( préparer son ordinateur pour réaliser le cours
+ exactement le même set up que la semaine dernière )
 
+=> Installer Visual Studio Code => https://code.visualstudio.com/
 
+=> extension à installer :
+=> Zoom Bar 
+=> Live Server 
 
+=> paramétrage : 
+=> retour à la ligne automatique si la largeur de la  phrase > largeur écran
+Roue dentée > Setting (paramètres) > wrap (recherche) > menu déroulant Editor: Word Wrap (on)
+
+----------------------
 
 
 jQuery ??? 
