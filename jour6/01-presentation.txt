@@ -1,0 +1,17 @@
+
+
+
+
+
+jQuery ??? 
+
+=> librairie  : fichier qui contient PLEIN PLEIN DE FONCTIONS
+                qui facilitent la vie du Développeur 
+                plus rapidement coder dans le langage Javascript 
+
+=> la spacialité de Javascript => Manipulation du DOM 
+=> jQuery va permettre de plus facilement manipuler le DOM
+
+si vous avez bien compris => document.querySelector().innerHTML )
+
+
