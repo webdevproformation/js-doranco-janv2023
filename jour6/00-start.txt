@@ -1,5 +1,3 @@
-
-
 url : https://formation.webdevpro.net/js-initiation/ (dans la barre d'adresse)
 login : js 
 password : initiation
@@ -15,3 +13,6 @@ password : web
 https://formation.webdevpro.net/jquery
 login js
 password : jquery
+
+toutes les notes de cours sont stockées sur un dépôt github.com (le même que la semaine dernière)
+https://github.com/webdevproformation/js-doranco-janv2023
