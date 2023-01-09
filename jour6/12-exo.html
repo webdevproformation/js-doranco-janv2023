@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){ // attend que les balises html de la page soient chargées 
+           // question 1
+           $("h1").text("attendre le chargement").css("text-align", "center");
+           //question 2
+           $("li").first().text("first");
+           // question 3
+           $("li").eq(1).text("2ème li");
+           // question 4
+           const style = {
+                "text-decoration" : "underline" , 
+                "color" : "green" ,
+                "text-align" : "center"
+            };
+           $("li").last().text("fin").css(style) ;
+           //question 5, 6 et 7
+           $("p").text("fin exo");
+           $("p").first().css("color", "pink");
+           $("p").last().css({"font-size" : 50 , "text-align" : "center"});
+        });
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <p></p>
+    <p></p>
+</body>
+</html>
