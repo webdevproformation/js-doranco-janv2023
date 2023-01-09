@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><!-- debut --> DOM <!-- fin --></h1>
+    <!-- <hr> #2 -->
+    <p></p>
+    <!-- <h2>Introduction</h2> #1 -->
+    <p></p>
+    <!-- ici BEFORE -->
+    <p></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+       // remplir le 1er p avec du texte 
+       $("p").first().text("un peu de texte"); // innerText
+
+       // remplir le 2ème p avec du texte qui contient une balise html 
+       $("p").eq(1).html(`du texte avec <a href="#">lien</a>`) ; // innerHTML 
+
+       // ajouter <h2>Introduction</h2> AVANT la 2ème balise p #1
+       $("p").eq(1).before(`<h2>Introduction</h2>`)
+
+       // ajouter la balise <hr> APRES la balise h1 #2
+       $("h1").after(`<hr>`); 
+
+       // ajouter le texte je découvre le AVANT le texte DOM dans la balise h1
+       $("h1").prepend("je découvre le ");
+
+       // ajouter le texte via jQuery APRES le DOM dans la balise h1 
+       $("h1").append(" via jQuery");
+
+
+       // dans la dernière balise p 
+       // ajouter du texte
+       // ajouter une balise avant
+       // ajouter une balise après
+       // un peu de texte au début
+       // un peu de texte à la fin 
+
+       $("p").last().text("voici le dernier p")
+                    .before('<h2>Conclusion</h2>') // avant
+                    .after(`<a href="#">nom auteur</a>`) // après
+                    .prepend("dernière phrase du document : ") // debut
+                    .append(" voici le lien pouvoir avoir plus de détails sur l'auteur")
+                    .css({"color" : "red"})
+                     // fin
+        // chainage 
+        // revolutionnaire => write less do more !! 
+        // dépendance 
+        // https://javascript.developpez.com/actu/335776/L-impact-de-la-suppression-de-jQuery-sur-les-performances-Web-l-experience-de-GOV-UK-site-Web-d-information-du-secteur-public-du-Royaume-Uni/
+        document.querySelectorAll("p")[2]
+        // aime jQuery // déteste jQuery 
+        // deux espaces / tabulation 
+    </script>
+</body>
+</html>
