@@ -13,6 +13,35 @@
     <p></p>
     <p></p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script></script>
+    <script>
+        //$("p").text("coucou"); // le comportement par défaut de jquery => tous les p contiennent le texte "coucou"
+
+        // comment faire pour remplir uniquement le 1er p ?? avec le texte Premier texte 
+        // 1ère solution : 
+        $("p").first().text("Premier texte");
+
+        // 2ème solution utiliser les sélecteurs css :first-child
+        $("p:first-child").text("Premier texte méthode 2")
+
+        // document.querySelectorAll("p")[0].innerText = "...."
+        // document.querySelector("p:first-child").innerText = "...."
+
+        // remplir le dernier p avec le texte "dernier p"
+        $("p").last().text("dernier p");
+
+        // 2ème p
+        $("p").eq(1).text("deuxieme p") ; // eq equal => égal
+        
+        // 3ème p 
+        $("p").eq(2).text("troisième p")
+
+        // 4ème p
+        $("p").eq(3).text("quatrième p")
+
+        // $("p").first().text("Premier texte");
+        // $("p").eq(0).text("Premier texte"); // synonyme
+
+
+    </script>
 </body>
 </html>
