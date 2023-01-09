@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!--
+        jquery librairie => fichier contient plein de fonction
+        disponible en deux versions 
+        minifiée 
+        de développement
+
+        https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js (31,10 Ko)=> install la version minifiée de la librairie => version où tous les sauts lignes et les espaces et les commentaires et les variables sont mises le plus petit possible
+        const premierElement
+        const p 
+        (au moment où la librairie est installée => le plus léger possible )
+
+         https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.js (290,20 Ko)
+         la version de développement (lisible par développeur) MAIS un peu plus lourde (en terme de ko) pour le chargement des pages 
+
+         => min (plus légère)
+
+         si j'ai besoin de savoir comme ils sont codés la fonction $("h1").text("")
+
+        text: function( value ) {
+            return access( this, function( value ) {
+                return value === undefined ?
+                    jQuery.text( this ) :
+                    this.empty().each( function() {
+                        if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+                            this.textContent = value;
+                        }
+                    } );
+            }, null, value, arguments.length );
+        },
+    -->
+    <script>
+
+    </script>
+</body>
+</html>
