@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        //$("h1").text("exo 8").css("font-size" , "32px")
+        $("h1").text("exo 8").css("font-size" , 32); 
+        // pour les unités en px pas besoin de préciser l'unité il va l'ajouter de lui même
+
+        // solution 1
+        $("h2").text("conclusion").css("color" , "green").css("text-decoration" , "underline");
+
+        // solution 2 autre solution possible utiliser dans la méthode css({})
+        $("h2").text("conclusion").css({"color" : "green" , "text-decoration" : "underline"});
+
+        $("p").text("je suis un p").css("color", "pink");
+        // jquery => très très lisible 
+    </script>
+</body>
+</html>
+<!-- 09-element-list.html -->
