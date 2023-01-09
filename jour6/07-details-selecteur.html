@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // remplir la balise h1 avec le texte "bonjour"
+        // modifier son style (css) mettre le texte en rouge
+
+        // js de natif = 2 instructions
+        // document.querySelector("h1").innerText = "bonjour";
+        // document.querySelector("h1").style.color = "red" ;
+
+        // jquery permet de réaliser ces modifications EN 1 seule instruction
+
+        /* $("h1").text("bonjour") ;
+        $("h1").css("color" , "red");  */
+
+        // chainage => enchainer // 1 seule instruction 
+        $("h1").text("bonjour").css("color", "red") ; 
+        $('h1').text('bonjour').css('color', 'red') ; 
+
+        $(`h1`).text(`bonjour`).css(`color`, `red`) ; 
+
+        // remplir les 2 paragraphes avec le texte jquery 
+        // js de base 
+        /* const p = document.querySelectorAll("p")
+        for(let i = 0 ; i < p.length ; i++){
+            p[i].innerText = "jquery"
+        } */
+
+        // $("") réalise une boucle par défaut 
+        $("p").text("jquery") ; // remplir TOUS les p de la page avec le texte "jquery"
+
+        // jquery était sortie en 2006 => révolutionnaire 
+        // dépendance => projet js de base 
+        //               avec jquery => dépendance il faut télécharger 
+        //               la librairie jquery pour pouvoir l'utiliser 
+
+        // 400 fonctions  => dans ton code (2 fonctions) => lourd et potentiellement lent 
+    </script>
+</body>
+</html>
+<!--
+    créer le fichier 08-exo.html
+    h1 
+    deux p
+    h2
+    deux p
+
+    installer jquery
+    remplir le h1 avec le texte exo 8 et changer sa taille de police à 32 px
+    remplir le h2 avec le texte "conclusion" et changer sa couleur à vert et le souligner
+    remplir tous les p avec le texte "je suis un p" et mettre leur couleur de police en rose 
+-->
