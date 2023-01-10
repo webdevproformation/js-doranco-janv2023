@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Action 1</button>
+    <button>Action 2</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit laudantium, sit dicta laboriosam odit porro debitis consequuntur? Ab ratione obcaecati perferendis iste molestiae cumque nostrum quae cum nulla molestias.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // si je clique sur le 1er btn => le text dans le p font-size de 50px
+        // js
+        /* document.querySelectorAll("button")[0].addEventListener("click", function(){
+            document.querySelector("p").style.fontSize = "50px";
+        }) */
+        // jQuery
+        $("button").first().on("click", function(){
+            $("p").css("font-size", 50);
+        }); 
+
+        // https://formation.webdevpro.net/js-dom/04-event.html
+        // si je clique sur le 2eme btn => le text dans le p font-size de 16px
+        // essayer des coder le comportement lié au deuxième bouton
+        /* $("button").last().on("click", function(){
+            $("p").css("font-size", 16)
+        }) */
+        $("button:last-of-type").on("click", function(){
+            $("p").css("font-size", 16)
+        })
+    </script>
+    <h1></h1><!-- height:0 -->
+    <h1>u</h1><!-- height:32px -->
+    <style>
+        h1{
+            height: 0;
+        }
+    </style>
+    <footer></footer><!-- height:0 ; padding : 0-->
+    <footer>u</footer><!-- height:32px ; padding:0 -->
+    <style>
+        footer{
+            padding: 10px;
+        }
+    </style>
+</body>
+</html>
