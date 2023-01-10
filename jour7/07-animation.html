@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>masquer</button>
+    <button>afficher</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quidem suscipit vero voluptatem sequi vel mollitia odit consequatur culpa quibusdam veniam aspernatur quia saepe, velit illum expedita enim blanditiis. Eos.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $("button").first().on("click", function(){
+           // $("p").css("display", "none")
+           // $("p").hide();
+           // $("p").slideUp();// disparaitre avec un effet glisser vers le haut
+           $("p").fadeOut(); // disparition avec effet sur l'opacité 1 => 0
+        })
+        $("button").eq(1).on("click", function(){
+            // $("p").css("display", "block")
+            //$("p").show();
+            // $("p").slideDown(); // apparaitre avec un effet glisser vers le bas 
+            $("p").fadeIn(); // apparaitre avec un effet sur l'opacité 0 => 1
+            
+            // https://api.jquery.com/category/effects/
+        })
+    </script>
+</body>
+</html>
