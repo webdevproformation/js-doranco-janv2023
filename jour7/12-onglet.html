@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- button*3>{onglet $} -->
+    <button data-index="0">onglet 1</button>
+    <button data-index="1">onglet 2</button>
+    <button data-index="2">onglet 3</button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, est? Obcaecati, aliquam rem cum ipsum earum, consequatur amet autem quos illum sunt labore id, placeat ullam assumenda ducimus nesciunt quae!</p>
+    <p>Animi, pariatur. Itaque doloribus odit facere nisi quos pariatur blanditiis ut necessitatibus, at earum, adipisci voluptatibus vel dolores molestiae placeat quaerat? Laudantium, nihil eius. Nulla cupiditate perferendis enim voluptates consectetur.</p>
+    <p>Iure tempora iste debitis laborum velit voluptatum. Fuga dolorem fugit, provident vel nesciunt id eos recusandae aliquam consequatur praesentium aut sed, sequi aliquid molestias in quae autem odit error incidunt?</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $("p").hide().first().show();
+        // $("p").css("display", "none").first().css("display", "block");
+        let currentIndex = 0; // numéro de l'onglet surlequel la balise est p est affiché
+        $("button").on("click",function(element){
+            const index = element.target.dataset.index;
+            if(index == currentIndex){
+                return ; 
+            }
+            $("p").eq(currentIndex).slideUp(1000 , function(){ // 0 => 1
+                $("p").eq(index).slideDown(1000)
+                currentIndex = index; 
+            })
+        })
+    </script>
+
+</body>
+</html>

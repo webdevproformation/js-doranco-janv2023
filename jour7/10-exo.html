@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>menu</button>
+    <nav>
+        <ul>
+            <li>Accueil</li>
+            <li>Contact</li>
+            <li>Mentions Légales</li>
+        </ul>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $("button").on("click", function(){
+            $("nav").toggle();
+            // modifier le texte dans la balise button
+            // si button contient le texte "afficher"
+            // remplir le bouton avec le texte masquer
+            // sinon le bouton avec le texte afficher
+            /* const condition = $("button").text() === "afficher" ; // true / false 
+            $("button").text( condition ? "masquer" : "afficher" ) */
+
+            $("button").text( $("button").text() === "afficher" ? "masquer" : "afficher" )
+        });
+
+        // js 
+        var test = false ;
+        const test2 = false ;
+        let test3 = false ; 
+
+
+        const test4 = 10 === "10"; // false
+        const test5 = $("button").text() === "tutu" ; 
+        //const test5 = "menu" === "tutu" ; 
+        //                false 
+
+        // operateur unaire ++ += -- -=  !true
+        // operateur binaire 2 + 3 - * / % ** && || 
+        // operateur ternaire   condition ? true : false 
+        // version longue
+        const cond = 10 > 3 ;
+        if(cond){
+            console.log("c'est vrai");
+        }else {
+            console.log("c'est faux");
+        }
+
+        // version courte 
+        console.log(cond ? "c'est vrai" : "c'est faux");
+        console.log(10 > 3 ? "c'est vrai" : "c'est faux");
+
+        // version longue
+        if($("button").text(  ) === "afficher"){
+            $("button").text("masquer");
+        }else {
+            $("button").text("afficher");
+        }
+
+        // version courte
+        const condition2 = $("button").text(  ) === "afficher" ;
+        $("button").text( condition2 ? "masquer" : "afficher" )
+
+    </script>
+</body>
+</html>
+<!-- 11-animation-suite-suite.html -->

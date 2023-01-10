@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>action</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cum quo, id laudantium repellendus possimus! Quibusdam, assumenda. Corporis natus, expedita neque explicabo quia ex aliquid pariatur esse, ipsum facere molestias.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // si je clique sur le bouton
+        // faire apparaitre le p 
+        // quand l'animation est finie changer la taille de police 16px => 40px
+        $("p").hide();
+        $("button").on("click", function(){
+            // 1000ms => 1 seconde durée de l'animation
+            // fonction(){ } à excuter lorsque l'animation est finie (au bout 1 seconde)
+            $("p").fadeIn(1000, function(){
+                $("p").animate({"font-size": 40 }, 2000)
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- 12-onglet.html -->
