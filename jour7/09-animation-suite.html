@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>masquer</button>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis corrupti possimus recusandae dolore labore, vel, delectus temporibus voluptatem, odio quam qui optio harum. Cum, illum tempore modi nihil ea suscipit?</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // 1 seul bouton 
+        // si je clique 1 première fois sur le bouton => masquer le p
+        // si je clique 2 deuxieme fois sur le bouton => afficher le p
+        // toggle // reservible / bouton à bascule 
+        /* $("button").on("click" , function(){
+            const texte = $("button").text()
+            if(texte === "masquer"){
+                $("p").hide();
+                $("button").text("afficher");
+            } else {
+                $("p").show();
+                $("button").text("masquer");
+            }
+        }) */
+        $("button").on("click" , function(){
+            $("button").html( $("button").html() === "masquer" ? "afficher" : "masquer" )
+            // $("p").toggle(); // si hide() => show() si show() => hide()
+            // $("p").slideToggle(); 
+            $("p").fadeToggle(); 
+        })
+    </script>
+</body>
+</html>
