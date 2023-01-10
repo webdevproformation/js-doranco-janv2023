@@ -10,13 +10,31 @@
     <article>
         <h2>titre</h2>
         <img src="https://via.placeholder.com/400x200" alt="">
-        <button>lire la suite </button>
+        <button data-effet="apparition">lire la suite </button>
         <p>avec un peu de texte</p>  
     </article>
     <article>
         <h2>titre</h2>
         <img src="https://via.placeholder.com/400x200" alt="">
-        <button>lire la suite </button>
+        <button data-effet="opacite">lire la suite </button>
+        <p>avec un peu de texte</p>
+    </article>
+    <article>
+        <h2>titre</h2>
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <button data-effet="apparition">lire la suite </button>
+        <p>avec un peu de texte</p>
+    </article>
+    <article>
+        <h2>titre</h2>
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <button data-effet="slide">lire la suite </button>
+        <p>avec un peu de texte</p>
+    </article>
+    <article>
+        <h2>titre</h2>
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <button data-effet="opacite">lire la suite </button>
         <p>avec un peu de texte</p>
     </article>
     <style>
@@ -34,11 +52,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
         $("p").hide();
-        $("button").first().on("click",function(){
+        /* $("button").first().on("click",function(){
             $("p").first().slideDown();
         })
         $("button").eq(1).on("click",function(){
             $("p").eq(1).fadeIn();
+        }) */
+        // .before()
+        // .html()
+        // .show()
+        // .fadeIn()
+        $("button").on('click' , function(element){
+            const effet = element.target.dataset.effet;
+            // console.log($(element.target).next())
+            if(effet === "slide"){
+                $(element.target).next().slideDown()
+            }else if(effet === "opacite"){
+                $(element.target).next().fadeIn()
+            }else{
+                $(element.target).next().show()
+            }
         })
     </script>
 
