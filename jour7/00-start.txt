@@ -1,0 +1,108 @@
+https://formation.webdevpro.net/jquery
+login js
+password : jquery
+
+toutes les notes de cours sont stockées sur un dépôt github.com (le même que la semaine dernière)
+https://github.com/webdevproformation/js-doranco-janv2023
+
+------------------
+
+Rappeler ce que l'on a vu hier ??? 
+
+Javascript est installé par défaut dans ton navigateur (Firefox / Chrome / IE / Edge / Opera)
+jQuery téléchargé et installé 
+
+jquery.com > download > section CDN (Content Delivery Network) > 
+<script src="..../jquery.min.js"></script>  
+<script></script>
+
+----------------
+
+l'ordre dans lequel votre code est IMPORTANT
+
+balise html 
+<script src="..../jquery.min.js"></script> téléchargement de jQuery 
+<script></script> vous allez écrire votre script js 
+
+----------------
+
+jQuery librairie qui permet de manipuler le DOM plus facilement que Javascript de base : 
+write less do more 
+
+remplacer : 
+document.querySelector() / document.querySelectorAll()
+
+par :
+$()
+
+------------
+$() permet d'utiliser le CHAINAGE :
+changer du text et modifier le css 
+
+document.querySelector("p").innerText = "texte"
+document.querySelector("p").style.color = "red"
+
+chainage en jquery
+$("p").text("texte").css("color", "red");
+
+------------
+
+$("h2") => qu'il y ait un ou plusieurs h2 la syntaxe est la même 
+
+// si 1 h2
+document.querySelector("h2").innerText = "..." => 1er h2 de la page 
+
+// si plusieurs h2
+const h2 = document.querySelectorAll("h2")
+for(let i = 0 ; i < h2.length ; i++){
+    h2[i].innerText = "..."
+}
+
+$("h2").text("...") ; // pour 1 ou plusieurs h2 
+
+------------
+
+si on veut écrire code dans le <head> => il faut demander à js d'ATTENDRE que le contenu du DOM soit loaded (chargé)
+
+js de base 
+document.addEventListener("DOMContentLoaded", function(){
+    // code 
+})
+
+jquery 
+$(document).ready(function(){
+    // code
+})
+
+$(function(){
+    // code 
+})
+
+------------
+
+si on a plusieurs balises p à styliser MAIS que je veux modifier uniquement la  1er 
+
+$("p").first().css()
+
+la dernière
+$("p").last().css()
+
+la 3ème balise p 
+$("p").eq(2).css()
+
+.last() .first() .eq() permettent de selectionner une balise dans une liste 
+
+------------
+
+6 manières d'ajouter du html ou du text avec jquery 
+
+before
+<p>prepend .... append</p>
+after
+
+$("p").text()
+      .html()
+      .before()
+      .after()
+      .prepend()
+      .append()
