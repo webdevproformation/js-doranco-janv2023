@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <h2>titre</h2>
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <button>lire la suite </button>
+        <p>avec un peu de texte</p>  
+    </article>
+    <article>
+        <h2>titre</h2>
+        <img src="https://via.placeholder.com/400x200" alt="">
+        <button>lire la suite </button>
+        <p>avec un peu de texte</p>
+    </article>
+    <style>
+        body{
+            width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:10px;
+        }
+        img{
+            max-width: 100%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $("p").hide();
+        $("button").first().on("click",function(){
+            $("p").first().slideDown();
+        })
+        $("button").eq(1).on("click",function(){
+            $("p").eq(1).fadeIn();
+        })
+    </script>
+
+</body>
+</html>
