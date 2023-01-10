@@ -26,7 +26,12 @@
             }
         }) */
         $("button").on("click" , function(){
-            $("button").html( $("button").html() === "masquer" ? "afficher" : "masquer" )
+            // $("button").text( $("button").text() === "masquer" ? "afficher" : "masquer" );
+            if($("button").text() === "masquer"){
+                $("button").text("afficher")
+            }else {
+                $("button").text("masquer")
+            }
             // $("p").toggle(); // si hide() => show() si show() => hide()
             // $("p").slideToggle(); 
             $("p").fadeToggle(); 
