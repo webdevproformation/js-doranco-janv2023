@@ -12,9 +12,12 @@
     <button data-index="1">onglet 2</button>
     <button data-index="2">onglet 3</button>
     <!-- p*3>lorem -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem expedita reiciendis praesentium alias tempora minus maiores minima magni, tenetur nemo ad tempore error nihil iste. Fugit quasi enim officiis animi!</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem expedita reiciendis praesentium alias tempora minus maiores minima magni, tenetur nemo ad tempore error nihil iste. Fugit quasi enim officiis animi!</p>
     <p>Sapiente quia maxime officia magni nisi porro animi maiores illum. Unde assumenda aperiam accusamus in, deserunt alias est. Facilis ex, architecto reiciendis delectus animi dolore saepe eos cum ab maiores.</p>
     <p>Vel, minus. Eveniet obcaecati doloremque delectus, eaque impedit tenetur repellat omnis molestias quaerat quos. At aliquam omnis ut ab iusto, cupiditate architecto, inventore modi provident enim ullam libero dolorem magnam!</p>
+    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
         // solution avec de la répétition dans notre code
@@ -26,16 +29,19 @@
             $("p").eq(0).css("display", "block");
             $("p").eq(1).css("display", "none");
             $("p").eq(2).css("display", "none");
+            $("p").css("display", "none").eq(0).css("display", "block");
         })
         $("button").eq(1).on("click", function(){
             $("p").eq(0).css("display", "none");
             $("p").eq(1).css("display", "block");
             $("p").eq(2).css("display", "none");
+            $("p").css("display", "none").eq(1).css("display", "block");
         })
         $("button").eq(2).on("click", function(){
             $("p").eq(0).css("display", "none");
             $("p").eq(1).css("display", "none");
             $("p").eq(2).css("display", "block");
+            $("p").css("display", "none").eq(2).css("display", "block");
         }) */
 
         // chainage et le fait boucle automatique
@@ -43,7 +49,14 @@
         $("p").css("display", "none").first().css("display", "block");
         $("button").on("click", function(element){
             const index = element.target.dataset.index
-            $("p").css("display", "none").eq(index).css("display", "block");
+            /* for(let i = 0 ; i < $("button").length ; i++){
+                if(i != index){
+                    $("p").eq(i).css("display", "none")
+                }
+            } 
+            $("p").eq(index).css("display", "block");
+            */
+           $("p").css("display", "none").eq(index).css("display", "block");
         });
 
     </script>
