@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav></nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+       /*  $("nav").html(`<ul>
+                            <li>Accueil</li>
+                            <li>Contact</li>
+                        </ul>`);
+        
+        $("nav").before(`<button>menu</button>`); */
+
+        $("nav").html(`<ul>
+                            <li>Accueil</li>
+                            <li>Contact</li>
+                        </ul>`)
+                .before(`<button>menu</button>`)
+                .attr("id", "menu")
+                .addClass("open");
+
+        // $("nav").before().html(`<button>menu</button>`);
+        
+        // $("nav").before();
+        // $("nav").html(`<button>menu</button>`)
+
+        // $("nav").before(`<button>menu</button>`);
+    </script>
+</body>
+</html>
