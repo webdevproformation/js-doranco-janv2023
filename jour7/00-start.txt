@@ -105,4 +105,16 @@ $("p").text()
       .before()
       .after()
       .prepend()
-      .append()
+      .append();
+
+
+cas pratique 
+dans le dossier jour7 créer le fichier 01-exo.html 
+
+créer un tableau de 5 colonnes et 3 lignes contenant chacun 2 mots aléatoires
+
+via jQuery
+1 dans la 1er case de la première colonne modifier le texte par "je suis la case 1 1"
+2 ajouter un préfix de votre choix (text avant le text) pour chacune des cases de la 2ème ligne 
+3 ajouter un suffixe (text après le text) pour chacune des cases de la 2ème colonne 
+4 dans la dernière case de la dernière ligne modifier le texte p <a href="#">lire la suite</a>
