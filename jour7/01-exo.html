@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Repellendus, rem?</td>
+            <td>Necessitatibus, fuga.</td>
+            <td>Similique, corrupti.</td>
+            <td>Quis, perspiciatis.</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Vitae, debitis.</td>
+            <td>Voluptatibus, ad?</td>
+            <td>Assumenda, explicabo.</td>
+            <td>Sapiente, libero.</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum.</td>
+            <td>Cum, est.</td>
+            <td>Necessitatibus, voluptatem?</td>
+            <td>Et, dolorem?</td>
+            <td>Exercitationem, obcaecati.</td>
+        </tr>
+    </table>
+    <!-- table>tr*3>td*5>lorem2 -->
+    <!-- jquery.com > download > cdn -->
+    <style>
+        td{ border: 1px solid black}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $("td").first().text("je suis la case 1 1");
+        // si j'avais eu deux tableaux et je veux faire la même chose pour le 1er tableau 1er case 1ère colonne
+        // $("table:first-of-type td").first().text("je suis la case 1 1");
+
+        $("tr:nth-child(2) td").prepend("🦁 ");
+
+        $("td:nth-child(2)").append(" 🍉🎪") ;
+        // astuce => https://emojipedia.org/ =>
+        
+        $("td").last().html(`<a href="#">lire la suite</a>`)
+    </script>
+</body>
+</html>
